@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DISH"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:id="@+id/cartDish"
+        android:layout_alignBottom="@+id/textView10"
+        android:layout_toRightOf="@+id/textView11"
+        android:layout_toEndOf="@+id/textView11" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="x"
+        android:textSize="20dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginStart="44dp"
+        android:textColor="@color/black"
+        android:layout_alignBottom="@+id/cartDish"
+        android:layout_toRightOf="@+id/numCart"
+        android:layout_toEndOf="@+id/numCart"
+        android:id="@+id/textView11" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:layout_alignBottom="@+id/cartDish"
+        android:id="@+id/numCart" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="id"
+        android:visibility="invisible"
+        android:layout_alignBaseline="@+id/textView11"
+        android:layout_alignBottom="@+id/textView11"
+        android:layout_toLeftOf="@+id/amountCartList"
+        android:layout_toStartOf="@+id/amountCartList"
+        android:id="@+id/id_"
+        android:layout_marginRight="41dp"
+        android:layout_marginEnd="41dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20dp"
+        android:layout_alignTop="@+id/amountCartList"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/textView10" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rs. 0000"
+        android:textSize="18dp"
+        android:layout_marginRight="51dp"
+        android:textColor="@color/colorAccent"
+        android:layout_marginEnd="51dp"
+        android:id="@+id/amountCartList"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/textView10"
+        android:layout_toStartOf="@+id/textView10" />
+
+</RelativeLayout>

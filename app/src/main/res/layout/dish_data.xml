@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dish Name"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:id="@+id/dish" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="13dp"
+        android:id="@+id/descrip"
+        android:layout_below="@+id/dish"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rs. 00"
+        android:textSize="25dp"
+        android:layout_alignBottom="@+id/textView"
+        android:textColor="@color/colorAccent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/total"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total:"
+        android:textSize="20dp"
+        android:layout_below="@+id/minus"
+        android:layout_alignRight="@+id/vegOrNonVeg"
+        android:layout_alignEnd="@+id/vegOrNonVeg"
+        android:textColor="@color/black"
+        android:layout_marginTop="38dp"
+        android:id="@+id/textView" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:layout_marginTop="145dp"
+        android:id="@+id/plus"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/green"
+        android:textSize="30dp"
+        android:layout_below="@+id/descrip"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Non-veg"
+        android:textSize="15dp"
+        android:layout_above="@+id/minus"
+        android:id="@+id/vegOrNonVeg"
+        android:layout_alignLeft="@+id/descrip"
+        android:textColor="@color/black"
+        android:layout_alignStart="@+id/descrip"
+        android:layout_marginBottom="23dp" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="-"
+        android:id="@+id/minus"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/red"
+        android:layout_alignBaseline="@+id/plus"
+        android:layout_alignBottom="@+id/plus"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rs. 1000"
+        android:id="@+id/priceOfDish"
+        android:textSize="20dp"
+        android:layout_above="@+id/descrip"
+        android:textColor="@color/colorAccent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="100"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/number"
+        android:layout_alignBottom="@+id/minus"
+        android:layout_centerHorizontal="true" />
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add to Cart"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:id="@+id/addToCart"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
